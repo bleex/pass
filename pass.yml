@@ -1,0 +1,6 @@
+keepass:
+  dbfile: Database.kdbx
+  oldentry: a
+  newentry: b
+  group: pypass
+
