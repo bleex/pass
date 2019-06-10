@@ -129,7 +129,7 @@ class KeePass():
     def __init__(self, password, cfgfile='pass.yml'):
         keyfile = None
         with open(cfgfile, 'r') as ymlfile:
-            cfg = yaml.load(ymlfile)['keepass']
+            cfg = yaml.safe_load(ymlfile)['keepass']
             dbfile = cfg['dbfile']
             group = cfg['group']
             newentry = cfg['newentry']
