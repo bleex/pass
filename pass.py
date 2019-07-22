@@ -102,9 +102,9 @@ class Host():
                 interact.send(self.newpwd)
                 interact.expect(Host.CONST_NEWPWPROMPT2)
                 interact.send(self.newpwd)
-                interact.expect(Host.CONST_SUCCESSMSG)
 
                 if found_index == 0:
+                    interact.expect(Host.CONST_SUCCESSMSG)
                     interact.send('exit')
                 interact.expect()
                 self.changed = True
